@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Trasmontano Fixer",
+  "version": "1.0.0",
+
+  "description": "Corrige problemas de usabilidade no site da Trasmontano",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "trasmontano-fixer@davi.dev"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://interno.trasmontano.com.br/*",
+        "*://trasmontano.com.br/auth"
+      ],
+      "js": ["dist/trasmontano.js"]
+    }
+  ]
+
+}

@@ -1,0 +1,23 @@
+{
+  "name": "trasmontano-fixer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "webpack --mode=development",
+    "watch": "webpack --mode=development --watch",
+    "package": "npm run build && web-ext --config=web-ext.config.js build",
+    "clean-artifacts": "rm -rf dist web-ext-artifacts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "web-ext": "^4.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

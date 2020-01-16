@@ -8,7 +8,8 @@
     "build-dev": "webpack --mode=development",
     "watch": "webpack --mode=development --watch",
     "package": "npm run build && web-ext --config=web-ext.config.js build",
-    "clean-artifacts": "rm -rf dist web-ext-artifacts"
+    "clean-artifacts": "rm -rf dist web-ext-artifacts",
+    "package-sign": "npm run build && web-ext --config=web-ext.config.js sign"
   },
   "keywords": [],
   "author": "",

@@ -13,10 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": [
-        "*://interno.trasmontano.com.br/*",
-        "*://trasmontano.com.br/auth"
-      ],
+      "matches": ["*://*.trasmontano.com.br/*"],
       "js": ["dist/trasmontano.js"]
     }
   ]

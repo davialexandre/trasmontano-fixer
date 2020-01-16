@@ -10,7 +10,10 @@ export function createPage(page: Window): Page | null {
 }
 
 function isLoginPage(page: Window): boolean {
-    return page.location.hostname === 'trasmontano.com.br' &&
-        page.location.pathname === '/auth';
+    return isPublicWebsite(page.location) && page.location.pathname === '/auth';
+}
+
+function isPublicWebsite(location: Location): boolean {
+    return /^(www\.)?trasmontano\.com\.br$/.test(location.hostname);
 }
 

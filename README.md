@@ -8,6 +8,9 @@ Se você também é cliente da Trasmontano, essa extensão pode ser útil, mas u
 ### Limite do campo de senha no formulário de login
 O sistema permite o cadastro de senhas grandes, mas o formulário de login limita a senha em 20 caracteres, impossibilitando o login de usuários com senhas maiores do que isso. A extensão remove esse limite.
 
+### Impossibilidade de alterar campos de pesquisa no Agendamento de Consulta
+Ao procurar horários disponíveis para consulta é necessário selecionar uma série de campos. Após enviar a pesquisa, todos os campos são desabilitados impedindo qualquer alteração. Por esse motivo, a única maneira de alterar algo na pesquisa é iniciando uma nova consulta e selecionar todos os campos novamente. A extensão automaticamente habilita os campos no momento da pesquisa, assim é possível alterar qualquer que seja necessário.
+
 ## Utilização
 
 A extensão pode ser baixada na pagina de [releases](https://github.com/davialexandre/trasmontano-fixer/releases).
